@@ -6,3 +6,9 @@ php:
   - '7.0'
   - '7.1'
   - hhvm
+sudo: false
+before_script:
+  - composer install ${COMPOSER_FLAGS} --no-interaction
+script:
+  - vendor/bin/phpunit --coverage-clover clover.xml
+  - bin/coverage clover.xml 75
