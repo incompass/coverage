@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 use App\CoverageCommand;
 use org\bovigo\vfs\vfsStream;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
